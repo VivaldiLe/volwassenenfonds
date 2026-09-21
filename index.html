@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f4f0ec" />
-  <meta name="description" content="VRIJ PIANO — persoonlijke pianoschool voor volwassenen. Leer harmonie begrijpen, vrij improviseren en je eigen muziek ontwikkelen met Lena Sloss." />
+  <meta name="description" content="VRIJ PIANO — persoonlijke pianoschool voor volwassenen en kinderen vanaf 10 jaar. Leer harmonie begrijpen, vrij improviseren en je eigen muziek ontwikkelen met Lena Sloss." />
   <meta property="og:title" content="VRIJ PIANO — School voor piano & improvisatie" />
-  <meta property="og:description" content="Persoonlijke pianotrajecten voor volwassenen: harmonie, improvisatie, ritme en eigen compositie." />
+  <meta property="og:description" content="Persoonlijke pianotrajecten voor volwassenen en kinderen vanaf 10 jaar: harmonie, improvisatie, ritme en eigen compositie." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://lenasloss.nl/" />
   <link rel="canonical" href="https://lenasloss.nl/" />
@@ -469,7 +469,7 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow hero-kicker">Open inschrijving · persoonlijke pianoschool voor volwassenen</div>
+          <div class="eyebrow hero-kicker">Open inschrijving · voor volwassenen & kinderen vanaf 10 jaar</div>
           <h1>
             <span>VRIJ</span>
             <span class="ghost">PIANO</span>
@@ -587,7 +587,7 @@
           <div class="eyebrow">Voor wie</div>
           <h2>Niet iedereen zoekt hetzelfde in muziek.</h2>
           <p class="body-lg">
-            Daarom begint het traject niet met de vraag “wat moet je kunnen?”, maar met:
+            Voor volwassenen én kinderen vanaf 10 jaar begint het traject niet met de vraag “wat moet je kunnen?”, maar met:
             “wat wil je met muziek kunnen doen?”
           </p>
         </div>
@@ -696,8 +696,8 @@
             <div class="eyebrow">VRIJ PIANO</div>
             <h3>Een persoonlijke pianoschool rond jouw muzikale taal.</h3>
             <p class="body-lg">
-              VRIJ PIANO werkt met individuele trajecten voor volwassenen. De lessen verbinden
-              harmonie, improvisatie, ritme en compositie met jouw eigen smaak en tempo.
+              VRIJ PIANO werkt met individuele trajecten voor volwassenen en kinderen vanaf 10 jaar. De lessen verbinden
+              harmonie, improvisatie, ritme en compositie met jouw eigen smaak, leeftijd en tempo.
               Je krijgt niet alleen lesmomenten, maar een doorlopende leerroute met materiaal voor thuis.
             </p>
             <div class="actions">
@@ -794,6 +794,10 @@
                 <label for="place">Woonplaats</label>
                 <input id="place" name="place" autocomplete="address-level2" placeholder="Bijv. Zeist" />
               </div>
+              <div class="field">
+                <label for="age">Leeftijd</label>
+                <input id="age" name="age" inputmode="numeric" placeholder="Bijv. 12 of 38" />
+              </div>
               <div class="field full">
                 <label for="message">Wat zoek je in muziek?</label>
                 <textarea id="message" name="message" placeholder="Vertel kort wat je wilt leren, maken of ontdekken."></textarea>
@@ -874,6 +878,7 @@
         "Naam: " + data.get("name"),
         "E-mail: " + data.get("email"),
         "Woonplaats: " + (data.get("place") || "-"),
+        "Leeftijd: " + (data.get("age") || "-"),
         "Traject: " + data.get("package"),
         "",
         "Wat ik zoek in muziek:",
